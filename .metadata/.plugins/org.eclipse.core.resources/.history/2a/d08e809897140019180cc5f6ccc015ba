@@ -1,0 +1,7 @@
+package org.liaohailong.http;
+
+import org.apache.http.impl.bootstrap.HttpServer;
+
+public class UserServlet extends HttpServer{
+
+}

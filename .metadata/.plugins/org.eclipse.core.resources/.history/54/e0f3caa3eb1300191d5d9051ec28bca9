@@ -1,0 +1,12 @@
+package org.liaohailong.cookiesessions;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class CacheManager {
+	private Map<String, Object> cacheMap = new HashMap<String, Object>();
+
+	public void put(String key, Object value) {
+		
+	}
+}

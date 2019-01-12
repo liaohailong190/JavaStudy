@@ -1,0 +1,21 @@
+package org.liaohailong.tcp;
+
+import java.io.IOException;
+import java.net.ServerSocket;
+import java.net.Socket;
+
+public class TCPService {
+	public static void main(String[] args) {
+		System.out.println("TCP ·þÎñ¶ËÆô¶¯...");
+		try {
+			ServerSocket serverSocket = new ServerSocket(8080);
+			Socket accept = serverSocket.accept();
+			
+			
+			serverSocket.close();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

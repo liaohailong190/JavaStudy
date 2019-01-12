@@ -1,0 +1,5 @@
+package org.liaohailong.mybatis;
+
+public interface UserMapper {
+
+}

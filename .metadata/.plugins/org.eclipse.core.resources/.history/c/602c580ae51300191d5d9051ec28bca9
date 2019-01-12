@@ -1,0 +1,14 @@
+package org.liaohailong.cookiesessions;
+
+import javax.servlet.http.HttpServletResponse;
+
+public class ResponsUtil {
+
+	private ResponsUtil() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public static void setUtf8(HttpServletResponse resp) {
+		
+	}
+}

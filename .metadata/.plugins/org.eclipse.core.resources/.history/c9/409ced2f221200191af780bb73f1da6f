@@ -1,0 +1,10 @@
+package org.liaohailong.tcp;
+
+import java.net.ServerSocket;
+
+public class TCPService {
+	public static void main(String[] args) {
+		System.out.println("TCP ·þÎñ¶ËÆô¶¯...");
+		ServerSocket serverSocket = new ServerSocket();
+	}
+}

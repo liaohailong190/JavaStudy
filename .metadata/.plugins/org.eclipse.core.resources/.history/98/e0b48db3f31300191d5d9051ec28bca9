@@ -1,0 +1,8 @@
+package org.liaohailong.cookiesessions;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/localfrom")
+public class LocalFromServlet {
+
+}

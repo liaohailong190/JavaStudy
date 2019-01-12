@@ -1,0 +1,9 @@
+package org.liaohailong.cookiesessions;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/getsession");
+public class GetSessionServlet extends HttpServlet{
+
+}

@@ -1,0 +1,22 @@
+package org.liaohailong.udp;
+
+import java.net.DatagramPacket;
+import java.net.DatagramSocket;
+
+public class UDPClient {
+	public static void main(String[] args) {
+		try {
+			DatagramSocket datagramSocket = new DatagramSocket();
+			String message = "hello world, i am client";
+			byte[] buffer = message.getBytes();
+			
+			new DatagramPacket(buf, length)
+			datagramSocket.send(p);
+			
+			
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

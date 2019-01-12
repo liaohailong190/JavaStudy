@@ -1,0 +1,11 @@
+package org.liaohailong.mybatis;
+
+public interface UserMapper {
+	public User getUser(int id);
+	
+	public void addUser(User user);
+	
+	public void removeUser(User user);
+	
+	public void updateUser(User user)
+}

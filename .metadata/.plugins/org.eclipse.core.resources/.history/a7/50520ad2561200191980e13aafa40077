@@ -1,0 +1,9 @@
+package org.liaohailong.service;
+
+public class HelloService {
+	
+	public void getString() {
+	
+	}
+	}
+}

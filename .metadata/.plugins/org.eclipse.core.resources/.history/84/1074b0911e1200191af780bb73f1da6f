@@ -1,0 +1,22 @@
+package org.liaohailong.udp;
+
+import java.net.DatagramSocket;
+import java.net.SocketException;
+
+public class UDPService {
+
+	public static void main(String[] args) {
+		int port = 8080;
+		try {
+			DatagramSocket datagramSocket = new DatagramSocket(port);
+			System.out.println("UDP ·þÎñÆ÷¶ËÆô¶¯....");
+			
+			datagramSocket.receive(p);
+			
+			
+		} catch (SocketException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

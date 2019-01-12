@@ -1,0 +1,5 @@
+package org.liaohailong.mysql;
+
+public interface ISQLHelper {
+	int add();
+}

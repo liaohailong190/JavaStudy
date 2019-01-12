@@ -1,0 +1,7 @@
+package org.liaohailong.udp;
+
+public class UDPService {
+	public static void main(String[] args) {
+
+	}
+}

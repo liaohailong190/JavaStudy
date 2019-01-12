@@ -1,0 +1,11 @@
+INDEX VERSION 1.131
+D:\liao\java01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2838064051.index
+\hello-web\src\main\java
+D:\liao\java01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3281373496.index
+\CookieSession\src\main\java
+D:\liao\java01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1910446796.index
+\hello-web\src\main\java
+D:\liao\java01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3877825611.index
+\webA\src\main\java
+D:\liao\java01\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3032004559.index
+\webB\src\main\java

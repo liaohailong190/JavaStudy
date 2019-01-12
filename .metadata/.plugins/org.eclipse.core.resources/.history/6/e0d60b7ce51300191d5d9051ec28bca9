@@ -1,0 +1,28 @@
+package org.liaohailong.cookiesessions;
+
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+@WebServlet("/createsession")
+public class CreateSessionServlet extends HttpServlet {
+	private static final SimpleDateFormat DATE_FORMAT = new SimpleDateFormat("HH:mm:ss");
+
+	@Override
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		HttpSession session = req.getSession();
+		long currentTimeMillis = System.currentTimeMillis();
+		DATE_FORMAT.format(new Date())
+		session.setAttribute("name", "廖海龙");
+		
+		ResponsUtil.setUtf8(resp);
+		String text = "您已创建号 session = " + name;
+		ResponsUtil.write(resp, text);
+	}
+}

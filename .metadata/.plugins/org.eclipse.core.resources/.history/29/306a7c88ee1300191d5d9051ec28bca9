@@ -1,0 +1,6 @@
+package org.liaohailong.cookiesessions;
+
+public class SessionUtil {
+	private CacheManager cacheManager = new CacheManager();
+
+}

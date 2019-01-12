@@ -1,0 +1,8 @@
+package org.liaohailong.servlet;
+
+import javax.servlet.annotation.WebServlet;
+
+@WebServlet("/forward")
+public class RedirectServlet extends HttpS{
+
+}

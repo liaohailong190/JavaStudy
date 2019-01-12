@@ -1,0 +1,8 @@
+import org.liaohailong.mysql.SQLHelper;
+
+public class SQLTest {
+	public static void main(String[] args) {
+		ISQLHelper a = new SQLHelper();
+		
+	}
+}

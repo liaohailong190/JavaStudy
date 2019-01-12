@@ -1,0 +1,10 @@
+package org.liaohailong.cookiesessions;
+
+public class SessionUtil {
+	private CacheManager cacheManager = new CacheManager();
+
+	
+	public String setAttribute(String key,String) {
+		
+	}
+}

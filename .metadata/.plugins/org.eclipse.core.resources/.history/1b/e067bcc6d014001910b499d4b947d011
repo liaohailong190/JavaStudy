@@ -1,0 +1,7 @@
+package org.liaohailong.mysql;
+
+import org.liaohailong.mysql.entity.Student;
+
+public interface ISQLHelper {
+	int add(Student student);
+}

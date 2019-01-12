@@ -1,0 +1,27 @@
+import java.util.List;
+
+import org.liaohailong.mysql.ISQLHelper;
+import org.liaohailong.mysql.SQLHelper;
+import org.liaohailong.mysql.entity.Student;
+
+public class SQLTest {
+	public static void main(String[] args) {
+		ISQLHelper sqlHelper = new SQLHelper();
+//		queryAll(sqlHelper);
+		
+		
+		Student student = new Student();
+		student.id = 6;
+		student.name = "victor";
+		student.id = 6;
+		sqlHelper.add(student);
+	}
+
+	private static List<Student> queryAll(ISQLHelper sqlHelper) {
+		List<Student> all = sqlHelper.getAll();
+		for (Student student : all) {
+			System.out.println("result = " + student.toString());
+		}
+		return all;
+	}
+}

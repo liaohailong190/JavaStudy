@@ -1,0 +1,8 @@
+package org.liaohailong.hellofriends;
+
+
+public class HelloFriend {
+	public void getTest() {
+		
+	}
+}

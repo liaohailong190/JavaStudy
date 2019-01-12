@@ -1,0 +1,13 @@
+package org.liaohailong.cookiesessions;
+
+import java.util.UUID;
+
+public class SessionUtil {
+	private CacheManager cacheManager = new CacheManager();
+
+	public String setAttribute(String value) {
+		String sessionId = TokenUtil.getToken();
+		cacheManager.put(sessionId, value);
+		return value;
+	}
+}

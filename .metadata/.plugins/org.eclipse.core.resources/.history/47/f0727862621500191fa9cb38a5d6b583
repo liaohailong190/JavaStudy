@@ -1,0 +1,54 @@
+package mybatis;
+
+import java.io.IOException;
+import java.io.Reader;
+import java.util.List;
+
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.liaohailong.mybatis.User;
+
+public class Test {
+	public static void main(String[] args) {
+		String resource = "mybatis.xml";
+		Reader resourceAsReader;
+		try {
+			resourceAsReader = Resources.getResourceAsReader(resource);
+			// session 会话工厂
+			SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(resourceAsReader);
+			// 获取会话
+			SqlSession openSession = sqlSessionFactory.openSession();
+			
+			String statement = "org.liaohailong.mybatis.UserMapper.getAllUser";
+			List<User> allUsers = openSession.selectList(statement);
+			
+			
+			User selectOne = openSession.selectOne(statement, 1);
+			System.out.println(selectOne.toString());
+			openSession.close();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+	private static void find(SqlSession openSession,int id) {
+		String statement = "org.liaohailong.mybatis.UserMapper.getUser";
+		User selectOne = openSession.selectOne(statement,1);
+		
+		
+	}
+	
+	private static void findAll(SqlSession openSession) {
+		String statement = "org.liaohailong.mybatis.UserMapper.getAllUser";
+		List<User> allUsers = openSession.selectList(statement);
+		for (User user : allUsers) {
+			
+			
+		}
+		
+	}
+	
+	
+}

@@ -1,0 +1,9 @@
+package org.liaohailong.servlet;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+@WebServlet("/getdata")
+public class GetDataServlet extends HttpServlet{
+
+}
