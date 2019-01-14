@@ -1,0 +1,28 @@
+package org.liaohailong.spring.service;
+
+import javax.annotation.Resource;
+
+import org.aspectj.lang.annotation.Aspect;
+import org.liaohailong.spring.dao.UserDao;
+import org.springframework.stereotype.Service;
+
+@Service
+@Aspect //切入点
+public class UserService {
+	@Resource
+	private UserDao userDao;
+	
+	@Resource
+	private AOP aop;
+
+	public void setUserDao(UserDao userDao) {
+		System.out.println("setUserDao");
+		this.userDao = userDao;
+	}
+
+	public void add() {
+		System.out.println("业务逻辑层");
+		userDao.add();
+
+	}
+}

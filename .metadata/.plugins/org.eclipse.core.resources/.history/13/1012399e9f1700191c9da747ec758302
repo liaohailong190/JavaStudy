@@ -1,0 +1,7 @@
+package org.liaohailong.spring.dao;
+
+public class UserDao {
+	public void add() {
+
+	}
+}

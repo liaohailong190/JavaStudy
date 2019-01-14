@@ -1,0 +1,12 @@
+package org.liaohailong.spring.service;
+
+import org.liaohailong.spring.dao.UserDao;
+
+public class UserService {
+	private UserDao userDao;
+
+	public void add() {
+		System.out.println("ÒµÎñÂß¼­²ã");
+		userDao.add();
+	}
+}
