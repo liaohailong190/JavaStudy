@@ -24,7 +24,6 @@ public class SQLTest {
 	
 	private static int add(ISQLHelper sqlHelper) {
 		Student student = new Student();
-		student.id = 6;
 		student.name = "PengYuYan";
 		student.age = 1;
 		student.country = "TaiWan";
