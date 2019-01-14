@@ -1,0 +1,20 @@
+package org.liaohailong.spring.service;
+
+import org.springframework.stereotype.Component;
+
+@Component
+public class AOP {
+	/**
+	 * 开启事务
+	 */
+	public void begin() {
+
+	}
+
+	/**
+	 * 提交事务
+	 */
+	public void commit() {
+
+	}
+}

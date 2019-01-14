@@ -1,0 +1,14 @@
+package org.liaohailong.spring.service;
+
+public class AOP {
+	/**
+	 * ¿ªÆôÊÂÎñ
+	 */
+	public void begin() {
+		
+	}
+	
+	public void commit() {
+		
+	}
+}

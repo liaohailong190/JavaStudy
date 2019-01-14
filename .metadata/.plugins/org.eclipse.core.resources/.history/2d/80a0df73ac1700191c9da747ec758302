@@ -1,0 +1,26 @@
+package org.liaohailong.spring.service;
+
+import org.aspectj.lang.annotation.After;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+@Component
+@Aspect //标示为切面
+public class AOP {
+	/**
+	 * 开启事务
+	 */
+	//前置通知
+	@Before("execution(* org.liaohailong.spring.service.UserService.add(..))")
+	public void begin() {
+		System.out.println("事务开启");
+	}
+
+	/**
+	 * 提交事务
+	 */
+	public void commit() {
+		System.out.println("事务提交");
+	}
+}

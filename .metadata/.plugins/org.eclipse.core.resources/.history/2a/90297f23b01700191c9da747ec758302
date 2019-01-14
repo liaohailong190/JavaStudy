@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+
+	<!-- 开启/注入模式配置扫描文件包 -->
+	<context:component-scan
+		base-package="org.liaohailong.spring" />
+
+	<bean class="org.liaohailong.spring.dao.UserDao">
+		<property name="flag" value="true" />
+	</bean>
+
+	<!-- 定义aop类 -->
+	<bean id="aop" class="org.liaohailong.spring.service.AOP" />
+
+	<aop:config>
+		<aop:aspect ref="aop">
+		<aop:pointcut expression="execution(* org.liaohailong.spring.*.*(..))" id="pt"/>
+			<aop:before method="begin" />
+			<aop:after method="commit" />
+			<aop:after-throwing method="error" />
+			<aop:after-returning method="run" />
+			<aop:around method="around" />
+		</aop:aspect>
+
+	</aop:config>
+
+</beans>
