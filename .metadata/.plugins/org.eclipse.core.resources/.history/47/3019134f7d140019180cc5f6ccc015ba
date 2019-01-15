@@ -1,7 +1,0 @@
-package org.liaohailong.weba;
-
-import javax.servlet.Filter;
-
-public class RefererFilter implements Filter {
-
-}

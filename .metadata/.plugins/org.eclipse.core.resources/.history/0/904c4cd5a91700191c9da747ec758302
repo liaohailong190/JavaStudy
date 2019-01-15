@@ -1,8 +1,0 @@
-package org.liaohailong.spring.service;
-
-public class AOP {
-	
-	public void begin() {
-		
-	}
-}

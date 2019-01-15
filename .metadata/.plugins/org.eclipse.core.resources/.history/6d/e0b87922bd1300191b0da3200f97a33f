@@ -1,7 +1,0 @@
-package org.liaohailong.servlet;
-
-import javax.servlet.http.HttpServlet;
-
-public class GetDataServlet extends HttpServlet{
-
-}

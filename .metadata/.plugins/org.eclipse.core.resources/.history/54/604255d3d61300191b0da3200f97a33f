@@ -1,7 +1,0 @@
-package org.liaohailong.cookiesessions;
-
-import javax.servlet.http.HttpServlet;
-
-public class AddCookieServlet extends HttpServlet{
-
-}

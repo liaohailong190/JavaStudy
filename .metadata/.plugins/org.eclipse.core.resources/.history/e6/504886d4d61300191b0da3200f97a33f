@@ -1,9 +1,0 @@
-package org.liaohailong.cookiesessions;
-
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-
-@WebServlet("/addcookie");
-public class AddCookieServlet extends HttpServlet{
-
-}

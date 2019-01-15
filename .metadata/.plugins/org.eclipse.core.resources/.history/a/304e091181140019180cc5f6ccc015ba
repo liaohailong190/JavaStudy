@@ -1,9 +1,0 @@
-package org.liaohailong.weba;
-
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-
-@WebServlet("/to")
-public class ToServlet extends HttpServlet{
-
-}

@@ -1,7 +1,0 @@
-package spring1;
-
-public class SpringServiceTest {
-	public static void main(String[] args) {
-		
-	}
-}

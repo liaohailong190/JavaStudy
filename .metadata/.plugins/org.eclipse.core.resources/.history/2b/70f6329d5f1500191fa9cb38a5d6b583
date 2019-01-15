@@ -1,5 +1,0 @@
-package org.liaohailong.mybatis;
-
-public interface UserMapper {
-	public User getUser(int id);
-}

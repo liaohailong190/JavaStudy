@@ -1,5 +1,0 @@
-package org.liaohailong.mysql.dao;
-
-public interface IDAO {
-
-}

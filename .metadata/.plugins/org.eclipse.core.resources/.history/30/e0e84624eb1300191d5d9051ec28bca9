@@ -1,9 +1,0 @@
-package org.liaohailong.cookiesessions;
-
-public class Cache {
-	private String key;
-	private Object obj;
-	private long timestamps;
-	
-	
-}

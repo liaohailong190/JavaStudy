@@ -1,9 +1,0 @@
-package org.liaohailong.cookiesessions;
-
-import javax.servlet.http.HttpServlet;
-
-@Web
-
-public class GetSessionServlet extends HttpServlet{
-
-}

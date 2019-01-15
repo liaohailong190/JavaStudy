@@ -1,7 +1,0 @@
-package org.liaohailong.tcp;
-
-public class TCPService {
-	public static void main(String[] args) {
-
-	}
-}

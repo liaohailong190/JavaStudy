@@ -1,9 +1,0 @@
-package org.liaohailong.servlet;
-
-import javax.servlet.annotation.WebServlet;
-import javax.servlet.http.HttpServlet;
-
-@WebServlet("/forward")
-public class ForwardServlet extends HttpServlet{
-
-}

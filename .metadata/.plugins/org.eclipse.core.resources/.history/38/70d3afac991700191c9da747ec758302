@@ -1,6 +1,0 @@
-package org.liaohailong.spring.entity;
-
-public class UserEntity {
-	private String name;
-	private int age
-}

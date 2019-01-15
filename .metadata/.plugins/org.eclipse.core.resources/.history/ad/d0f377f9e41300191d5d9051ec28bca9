@@ -1,8 +1,0 @@
-package org.liaohailong.cookiesessions;
-
-public class ResponsUtil {
-
-	private ResponsUtil() {
-		// TODO Auto-generated constructor stub
-	}
-}
